@@ -2,6 +2,7 @@
 # This script logs into the specified mailbox and reads only the alert emails
 # The Script identifies the alert emails by sender 'Alerts_us@xyz.com' 
 # 										and subject starting with '**** Pending'
+#
 # It then picks out certain pieces of information from the mail body
 # and feeds that information into an excel sheet
 #
