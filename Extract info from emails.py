@@ -10,7 +10,6 @@
 # https://pypi.python.org/pypi/imap-tools
 #
 
-
 from imap_tools import MailBox
 import keyring
 import openpyxl
