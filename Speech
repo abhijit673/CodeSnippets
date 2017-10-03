@@ -1,0 +1,27 @@
+#! python3
+#
+# Speech module for Windows and Mac
+#
+
+# MacOS speech
+import os
+def macSpeak(sentence):
+	os.system("say " + sentence + "'")
+
+# Windows speech
+import win32com.client as wincl
+winSpeak = wincl.Dispatch("SAPI.SpVoice")
+
+def say(sentence):
+    speak.winSpeak(sentence)
+
+	
+#---------------------------------
+# Usage in programs
+# Initiate speech synthesis for Windows
+# from speak import say
+say("Hello there")
+
+# Initiate speech synthesis for MacOS
+# from speak import macSpeak
+macSpeak("Hello there")
