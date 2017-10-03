@@ -1,0 +1,34 @@
+#! python3
+#
+# The following functions removes,
+# 1. Puctuation marks
+# 2. Specified words
+#
+
+import string
+
+# Remove all punctuation and certain words from a sentence
+def removePunctuation (sentence):
+    # Set variable to include the punctuation marks
+    exclude = set(string.punctuation)
+    # Remove the puctuation marks from the sentence
+    sentence = ''.join(ch for ch in sentence if ch not in exclude)
+    return(sentence)
+
+# Remove unnecessary words from the question
+# Remove all punctuation and certain words from a sentence
+def removeWords (sentence):    
+    removeWords = ['can', 'you', 'need', ' i ', 'tell', 'me']
+    wordList = sentence.split()
+    
+    # Remove the unnecessary words
+    for remWords in removeWords:
+        for userWords in wordList:
+            print(userWords)
+            if userWords == remWords:
+                print('Match found: %s',userWords)
+                wordList.remove(remWords)
+
+    # Put all the words from the list together
+    together = ' '.join(wordList)
+    return(together)
