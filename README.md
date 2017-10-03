@@ -5,3 +5,4 @@
 * Email code snippets
 * Date function code samples
 * Speech module
+* Punctuation or word removal
